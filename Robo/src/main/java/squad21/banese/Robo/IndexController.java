@@ -96,7 +96,7 @@ public class RegistroController {
         Agendamento agendamento = AgendamentoController.getAgendamentoAtual();
         if (agendamento != null) {
             robo.registrarAgendamento(agendamento);
-            // Lógica de registro utilizando as informações do robo
+            
             System.out.println("Registrando o robô para o cliente: " + robo.getNomeCliente());
         } else {
             System.out.println("Nenhum agendamento encontrado.");
